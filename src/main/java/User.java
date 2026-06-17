@@ -1,4 +1,5 @@
-package PACKAGE_NAME;
-
 public class User {
+    long id;
+    String firstName;
+    String lastName;
 }

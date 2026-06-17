@@ -1,4 +1,4 @@
-package PACKAGE_NAME;
-
 public class Venue {
+    long id;
+    String venueName;
 }
