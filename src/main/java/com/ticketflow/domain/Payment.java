@@ -23,7 +23,13 @@ public class Payment implements Identifiable<Long> {
 
 
     @Override
-    public Long getId(){
+    public Long getId() {
         return id;
+    }
+
+    @Override
+    public String toString() {
+        return "Payment{id=" + id + ", bookingId=" + bookingId + ", amountGBP=£" + amountGDP +
+               ", status='" + status + "', paidAt=" + paidAt + "}";
     }
 }

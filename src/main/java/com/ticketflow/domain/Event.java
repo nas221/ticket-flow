@@ -36,6 +36,7 @@ public class Event implements Identifiable<Long> {
 
     @Override
     public String toString() {
-        return "Event{id=" + id + ", title='" + title + "', price=£" + priceGbp + "}";
+        return "Event{id=" + id + ", title='" + title + "', venueId=" + venueId +
+               ", dateTime=" + dateTime + ", priceGbp=£" + priceGbp + "}";
     }
 }

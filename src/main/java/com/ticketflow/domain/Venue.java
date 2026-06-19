@@ -31,4 +31,10 @@ public class Venue implements Identifiable<Long> {
     public Long getId() {
         return id;
     }
+
+    @Override
+    public String toString() {
+        return "Venue{id=" + id + ", name='" + name + "', city='" + city +
+               "', totalCapacity=" + totalCapacity + "}";
+    }
 }

@@ -33,7 +33,7 @@ public class User implements Identifiable<Long> {
    }
     @Override
     public String toString() {
-        return "User{id=" + id + ", email='" + email + "', displayName='" + displayName + "'}";
+        return "User{id=" + id + ", displayName='" + displayName + "', email='" + email + "'}";
     }
 }
 

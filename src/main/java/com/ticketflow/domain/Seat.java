@@ -37,9 +37,9 @@ public class Seat implements Identifiable<Long> {
         return category;
     }
     @Override
-    public String toString(){
-       return "Seat{" + row + number + " [" + category + "]}";
-
+    public String toString() {
+        return "Seat{id=" + id + ", venueId=" + venueId + ", row='" + row +
+               "', number=" + number + ", category='" + category + "'}";
     }
 }
 
