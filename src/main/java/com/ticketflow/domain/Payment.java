@@ -2,12 +2,25 @@ package com.ticketflow.domain;
 
 import com.ticketflow.repository.Identifiable;
 
-public class Payment implements Identifiable<Long> {
-    long id;
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
 
-    public Payment(long id) {
+public class Payment implements Identifiable<Long> {
+    private final Long id;
+    private final Long bookingId;
+    private final BigDecimal amountGDP;
+    private String status;
+    private LocalDateTime paidAt;
+
+    public Payment(Long id, Long bookingId, BigDecimal amountGDP, String status){
         this.id = id;
+        this.bookingId = bookingId;
+        this.amountGDP = amountGDP;
+        this.status = "PENDING";
     }
+
+
+
 
     @Override
     public Long getId(){

@@ -2,7 +2,7 @@ package com.ticketflow.domain;
 import com.ticketflow.repository.Identifiable;
 
 public class User implements Identifiable<Long> {
-    private long id;
+    private final Long id;
     private String displayName;
     private String passwordHash;
     private String email;
@@ -25,4 +25,15 @@ public class User implements Identifiable<Long> {
    public String getEmail(){
         return email;
    }
+   public void setDisplayName(String displayName){
+        this.displayName = displayName;
+   }
+   public void setEmail(String displayName){
+       this.email = email;
+   }
+    @Override
+    public String toString() {
+        return "User{id=" + id + ", email='" + email + "', displayName='" + displayName + "'}";
+    }
 }
+
