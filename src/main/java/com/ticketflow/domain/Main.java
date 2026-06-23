@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 public class Main {
-    public static void main(String[] args) {
+    static void main(String[] args) {
 
         // Create repositories
         UserRepository users = new UserRepository();
