@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 /**
  * A concert, show, or sporting event.
  * priceGbp: ticket price in British pounds.
- * BigDecimal (not double) for money — doubles have floating-point
+ * BigDecimal (not double) for money  doubles have floating-point
  * rounding errors, which is catastrophic for financial calculations.
  */
 public class Event implements Identifiable<Long> {
