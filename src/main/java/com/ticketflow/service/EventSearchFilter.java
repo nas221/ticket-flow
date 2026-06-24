@@ -13,8 +13,6 @@ public class EventSearchFilter {
     // We'll .and() more conditions onto it as the caller adds filters.
     private Predicate<Event> predicate = e -> true;
 
-
-
     public EventSearchFilter withMaxPrice(BigDecimal max) {
         predicate = predicate.and(e -> e.getPriceGbp().compareTo(max) <= 0);
         return this;
