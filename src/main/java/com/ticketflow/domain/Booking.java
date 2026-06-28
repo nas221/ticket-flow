@@ -41,5 +41,8 @@ public class Booking implements Identifiable<Long> {
     public String getStatus(){
         return status;
     }
+    public void setStatus(String confirmed){
+        this.status = status;
+    }
 }
 

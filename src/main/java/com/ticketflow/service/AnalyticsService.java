@@ -20,6 +20,7 @@ public class AnalyticsService {
         private final EventRepository events;
         private final SeatRepository seats;
 
+
         // Constructor injection: we receive the repositories we need.
         // We don't create them ourselves — whoever creates AnalyticsService hands them in.
         // This is the Dependency Injection pattern we'll formalise in Section 6.
@@ -30,7 +31,6 @@ public class AnalyticsService {
             this.events = events;
             this.seats = seats;
         }
-
         /**
          * Total revenue per event: sum the price for each CONFIRMED booking.
          *
