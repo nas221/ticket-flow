@@ -9,12 +9,10 @@ public class AnalyticsService {
 
 
 
-
     /**
      * Provides read-only analytics over TicketFlow data.
      * All methods are pure stream pipelines — no side effects.
      */
-
 
         private final BookingRepository bookings;
         private final EventRepository events;
